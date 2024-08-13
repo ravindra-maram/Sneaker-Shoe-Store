@@ -1,0 +1,18 @@
+.cart-table img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cart-table .cart-image-container {
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.cart-table .cart-title {
+  white-space: nowrap;
+  width: 14rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

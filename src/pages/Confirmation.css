@@ -1,0 +1,91 @@
+.confirmation-container {
+  margin-top: 200px; 
+  text-align: center;
+  min-height: 100vh;
+  /* background-color: #f8f9fa; */
+}
+
+.confirmation-icon {
+  margin-bottom: 20px;
+  animation: bounceIn 1s ease-in-out;
+}
+
+.tick-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #28a745; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.tick-circle::before,
+.tick-circle::after {
+  content: "";
+  position: absolute;
+  background-color: white; /* White tick */
+  border-radius: 2px;
+}
+
+.tick-circle::before {
+  width: 12px;
+  height: 50px;
+  transform: rotate(-135deg);
+  left: 51px;
+  top: 25px;
+}
+
+.tick-circle::after {
+  width: 12px;
+  height: 25px;
+  transform: rotate(-45deg);
+  left: 31px;
+  top: 45px;
+}
+
+.confirmation-title {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.confirmation-message {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.confirmation-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmation-button:hover {
+  background-color: #218838;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

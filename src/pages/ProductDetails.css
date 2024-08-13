@@ -1,0 +1,58 @@
+.lightbox-container {
+    max-width: 100%; /* Make sure the container is full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Increase the size of the main image */
+.lightbox-img-thumbnail:first-child {
+    width: 80% !important; /* Increase the main image size */
+    max-height: 500px !important; /* Set a maximum height to maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container without distorting */
+}
+
+/* Increase the size of the thumbnail images */
+.lightbox-img-thumbnail {
+    width: 20% !important; /* Adjust the thumbnail size */
+    height: auto !important;
+    margin-right: 0.5rem;
+    border: 1px solid #505050;
+    padding: 5px;
+    background-color: white;
+}
+
+.lightbox-backdrop.hide-controls div {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.product-image-container {
+    width: 100%;
+    height: 25rem; /* Adjust this value to change the image height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white; /* Optional: gives a white background to the image container */
+}
+
+.product-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image is scaled proportionally */
+}
+
+
+@media (min-width: 992px) {
+    .product-details {
+        padding-left: 2rem;
+    }
+    .product-details.text-black {
+        border-left: 1px solid #00000040;
+    }
+    .product-details.text-light {
+        border-left: 1px solid #fcbc7365;
+    }
+}
